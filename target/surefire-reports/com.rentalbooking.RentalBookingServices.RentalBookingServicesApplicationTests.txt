@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.rentalbooking.RentalBookingServices.RentalBookingServicesApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.934 s - in com.rentalbooking.RentalBookingServices.RentalBookingServicesApplicationTests

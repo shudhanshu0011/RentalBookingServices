@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Bike Rental Service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "devStart": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shudhanshu0011/RentalBookingServices.git"
+  },
+  "author": "Siddhant Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shudhanshu0011/RentalBookingServices/issues"
+  },
+  "homepage": "https://github.com/shudhanshu0011/RentalBookingServices#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15"
+  }
+}
