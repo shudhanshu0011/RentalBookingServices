@@ -99,6 +99,7 @@ export const Mainsearch = () => {
                   id="date-picker"
                   label="Dropoff Date"
                   value={DropDate}
+                  minDate={PickedDate}
                   onChange={handleDropDateChange}
                   KeyboardButtonProps={{
                     "aria-label": "change date",
