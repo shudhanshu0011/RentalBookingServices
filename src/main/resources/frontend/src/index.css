@@ -14,6 +14,17 @@
   -moz-osx-font-smoothing: grayscale;
   font-family: HM;
 }
+#root {
+  position: absolute;
+  width: 100%;
+}
+#portal {
+  position: absolute;
+  overflow: hidden;
+}
+body {
+  display: flex;
+}
 .navbar1 {
   display: flex;
   min-height: 65px;
@@ -34,7 +45,7 @@
 }
 .navigation {
   display: flex;
-  flex: 70%;
+  flex: 60%;
   text-align: center;
 }
 .navtext {
@@ -101,6 +112,12 @@
 }
 .dropdown:hover .dropbtn {
   cursor: pointer;
+}
+.cartt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 10%;
 }
 footer {
   padding-top: 100px;
