@@ -1,16 +1,16 @@
 import React, { useState, useContext, useEffect } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import About from "./pages/about";
-import Reviews from "./pages/reviews";
-import Faq from "./pages/faq";
-import Home from "./pages/home";
-import { Button } from "./components/button/button";
-import ProductList from "./pages/searchproduct/productlist";
-import Context from "./store/Context";
-import Cart from "./components/Cart";
-import { NavBar } from "./AppStyles";
-import GlobalStyles from "./GlobalStyles";
+import About from "./Divisions/LandingAndProductPage/pages/about";
+import Reviews from "./Divisions/LandingAndProductPage/pages/reviews";
+import Faq from "./Divisions/LandingAndProductPage/pages/faq";
+import Home from "./Divisions/LandingAndProductPage/pages/home";
+import { Button } from "./Divisions/LandingAndProductPage/components/button/button";
+import ProductList from "./Divisions/LandingAndProductPage/pages/searchproduct/productlist";
+import Context from "./Divisions/LandingAndProductPage/store/Context";
+import Cart from "./Divisions/LandingAndProductPage/components/Cart";
+import { NavBar } from "./Divisions/LandingAndProductPage/AppStyles";
+import GlobalStyles from "./Divisions/LandingAndProductPage/GlobalStyles";
 
 function App() {
   const [isToggle, setToggle] = useState(false);

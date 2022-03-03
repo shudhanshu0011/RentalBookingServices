@@ -1,0 +1,45 @@
+.productcard {
+  height: 42vh;
+  width: 40vh;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.productcard a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+.deetails0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.deetails01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.deetails1 {
+  display: flex;
+}
+.deetails1 div {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deetails2 {
+  display: flex;
+}
+.deetails2 Button {
+  flex: 50%;
+  margin: 25px;
+  margin-top: 7px;
+}
