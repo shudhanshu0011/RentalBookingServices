@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState, useContext, useEffect } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import About from "./pages/about";
-import Reviews from "./pages/reviews";
-import Faq from "./pages/faq";
-import Home from "./pages/home";
-import { Button } from "./components/button/button";
+import About from "./Divisions/LandingAndProductPage/pages/about";
+import Reviews from "./Divisions/LandingAndProductPage/pages/reviews";
+import Faq from "./Divisions/LandingAndProductPage/pages/faq";
+import Home from "./Divisions/LandingAndProductPage/pages/home";
+import { Button } from "./Divisions/LandingAndProductPage/components/button/button";
+import ProductList from "./Divisions/LandingAndProductPage/pages/searchproduct/productlist";
+import Context from "./Divisions/LandingAndProductPage/store/Context";
+import Cart from "./Divisions/LandingAndProductPage/components/Cart";
+import { NavBar } from "./Divisions/LandingAndProductPage/AppStyles";
+import GlobalStyles from "./Divisions/LandingAndProductPage/GlobalStyles";
 
 function App() {
+  const [isToggle, setToggle] = useState(false);
+  const context = useContext(Context);
+
+  useEffect(() => {
+    console.log(context);
+  }, [context]);
   return (
     <Router>
       <div className="navbar1">
@@ -105,12 +116,25 @@ function App() {
             </div>
           </div>
         </div>
+        <div className="cartt">
+          <GlobalStyles />
+          <NavBar>
+            <Cart
+              isToggle={isToggle}
+              setToggle={setToggle}
+              carts={context.carts}
+              removeProductFromCart={context.removeProductFromCart}
+              clearCart={context.clearCart}
+            />
+          </NavBar>
+        </div>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/productlist" element={<ProductList />} />
       </Routes>
       <footer>
         <div className="ft3rd">

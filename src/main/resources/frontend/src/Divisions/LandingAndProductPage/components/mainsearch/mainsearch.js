@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./mainsearch.css";
 import { Button } from "../button/button";
 import "date-fns";
@@ -126,14 +127,16 @@ export const Mainsearch = () => {
                 </FormControl>
               </Grid>
               <div className="searchhbtn">
-                <Button
-                  className="productsearch"
-                  type="button"
-                  buttonStyle="btn--primary--solid"
-                  buttonSize="btn--large"
-                >
-                  Search
-                </Button>
+                <Link to="/productlist">
+                  <Button
+                    className="productsearch"
+                    type="button"
+                    buttonStyle="btn--primary--solid"
+                    buttonSize="btn--large"
+                  >
+                    Search
+                  </Button>
+                </Link>
               </div>
             </MuiPickersUtilsProvider>
           </div>

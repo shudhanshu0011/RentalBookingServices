@@ -1,0 +1,18 @@
+.productimg {
+  background-color: aqua;
+}
+.container12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchresultarea {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}

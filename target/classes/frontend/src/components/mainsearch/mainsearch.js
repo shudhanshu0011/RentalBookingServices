@@ -1,5 +1,6 @@
 import React from "react";
 import "./mainsearch.css";
+import { ProductList } from "../../pages/searchproduct/productlist";
 import { Button } from "../button/button";
 import "date-fns";
 import Grid from "@material-ui/core/Grid";
@@ -131,6 +132,7 @@ export const Mainsearch = () => {
                   type="button"
                   buttonStyle="btn--primary--solid"
                   buttonSize="btn--large"
+                  onclick={console.log("")}
                 >
                   Search
                 </Button>
