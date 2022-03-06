@@ -7,6 +7,7 @@ import Context from "./Context";
 import Reducer from "./Reducer";
 
 export default function GlobalState(props) {
+//delete line 11 if using line 13-21 for get request
   const products = data.products;
 
   // const [products, setProducts] = useState([]);
