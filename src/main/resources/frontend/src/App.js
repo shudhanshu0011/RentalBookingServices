@@ -11,6 +11,7 @@ import Context from "./Divisions/LandingAndProductPage/store/Context";
 import Cart from "./Divisions/LandingAndProductPage/components/Cart";
 import { NavBar } from "./Divisions/LandingAndProductPage/AppStyles";
 import GlobalStyles from "./Divisions/LandingAndProductPage/GlobalStyles";
+import LoginSignup from "./Divisions/LandingAndProductPage/pages/loginsignup";
 
 function App() {
   const [isToggle, setToggle] = useState(false);
@@ -72,7 +73,9 @@ function App() {
                   buttonStyle="btn--primary--solid"
                   buttonSize="btn--small"
                 >
-                  Login/Sign Up
+                  <Link to="/login" className="navtext1">
+                    Login/Sign Up
+                  </Link>
                 </Button>
               </ul>
             </div>
@@ -108,12 +111,10 @@ function App() {
               buttonStyle="btn--primary--solid"
               buttonSize="btn--small"
             >
-              Login/Sign Up
+              <Link to="/login" className="navtext1">
+                Login/Sign Up
+              </Link>
             </Button>
-            <div className="dropdown-content">
-              <a href="#">Login</a>
-              <a href="#">Sign Up</a>
-            </div>
           </div>
         </div>
         <div className="cartt">
@@ -135,6 +136,7 @@ function App() {
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/productlist" element={<ProductList />} />
+        <Route path="/login" element={<LoginSignup />} />
       </Routes>
       <footer>
         <div className="ft3rd">

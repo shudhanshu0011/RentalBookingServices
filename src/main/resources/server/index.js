@@ -1,12 +1,18 @@
-const express = require("express");
-const app = express();
-const mysql = require("mysql");
+import express from "express";
+import data from "./data.js";
 
-const db = mysql.createPool({
-  host: "localhost",
-  user: "root",
-  password: "golu111999",
-  database: "myprojects",
+const app = express();
+// const mysql = require("mysql");
+
+// const db = mysql.createPool({
+//   host: "localhost",
+//   user: "root",
+//   password: "golu111999",
+//   database: "myprojects",
+// });
+
+app.get("/productlist", (req, res) => {
+  res.send(data.products);
 });
 
 app.get("/", (req, res) => {

@@ -11,7 +11,6 @@ export const Wrapper = styled.div`
 export const Icon = styled(FontAwesomeIcon)`
   padding: 5px;
   font-size: 24px;
-  color: #ffffff;
 `;
 
 export const CartCount = styled.span`
@@ -28,25 +27,25 @@ export const CartCount = styled.span`
 
 export const CartSideBar = styled.div`
   z-index: 1000;
+  border-radius: 15px;
   width: 550px;
+  height: 95%;
   background: #ffffff;
-  top: 0;
-  right: 0;
   padding: 25px;
   position: fixed;
   overflow: auto;
-  height: 100%;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: all ease-in-out 0.3s;
 
   &.expand {
     transition: all ease-in-out 0.3s;
-    right: 0;
+    right: 30px;
   }
 
   &.shrink {
     transition: all ease-in-out 0.3s;
-    right: -550px;
+    right: -5500px;
   }
 `;
 
@@ -117,8 +116,9 @@ export const CardRow = styled.div`
 
 export const ClearButton = styled.button`
   width: 100%;
+  border-radius: 20px;
   padding: 18px 24px;
-  background: #1a508b;
+  background: #8467f3;
   color: #ffffff;
   cursor: pointer;
   border: none;

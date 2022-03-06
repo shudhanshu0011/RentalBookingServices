@@ -18,8 +18,18 @@ function PortalContent({ item2, closeModal2, addProductToCart, props }) {
           <div>{item2.city}</div>
         </div>
         <div className="top3">
-          <Button onclick={() => closeModal2(false)}>Close</Button>
-          <Button onclick={() => addProductToCart({ ...props })}>
+          <Button
+            onclick={() => closeModal2(false)}
+            buttonStyle="btn--primary--outline"
+            buttonSize="btn--medium"
+          >
+            Close
+          </Button>
+          <Button
+            onclick={() => addProductToCart({ ...props })}
+            buttonStyle="btn--primary--solid"
+            buttonSize="btn--medium"
+          >
             Add to cart
           </Button>
         </div>

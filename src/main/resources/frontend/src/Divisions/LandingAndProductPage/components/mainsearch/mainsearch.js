@@ -20,7 +20,7 @@ import {
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
-    minWidth: 250,
+    minWidth: 272,
   },
 }));
 
@@ -60,12 +60,9 @@ export const Mainsearch = () => {
   };
 
   return (
-    <div>
+    <>
       <div className="container">
         <div className="search-box">
-          <div className="searchtext">
-            Search <span>Bikes</span>
-          </div>
           <div className="main-search-box">
             <MuiPickersUtilsProvider utils={DateFnsUtils}>
               <Grid container justifyContent="space-around">
@@ -126,71 +123,80 @@ export const Mainsearch = () => {
                   </Select>
                 </FormControl>
               </Grid>
-              <div className="searchhbtn">
-                <Link to="/productlist">
-                  <Button
-                    className="productsearch"
-                    type="button"
-                    buttonStyle="btn--primary--solid"
-                    buttonSize="btn--large"
-                  >
-                    Search
-                  </Button>
-                </Link>
-              </div>
             </MuiPickersUtilsProvider>
+            <div className="searchhbtn">
+              <div className="searchtext">
+                Search <span>Bikes</span>
+              </div>
+              <Link to="/productlist">
+                <Button
+                  className="productsearch"
+                  type="button"
+                  buttonStyle="btn--primary--solid"
+                  buttonSize="btn--large"
+                >
+                  Search
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
       <div className="howuse">
-        <div className="howusetext">How to Use</div>
         <div className="cardarea">
-          <div className="usecard1">
-            <div className="bikeimg">
-              <img src="https://github.com/shudhanshu0011/RentalBookingServices/blob/main/src/main/resources/static/images/motorcycle.png?raw=true"></img>
+          <div className="howusetext">How to Use</div>
+          <div className="cardss">
+            <div className="cardss1">
+              <div className="usecard1">
+                <div className="bikeimg">
+                  <img src="https://github.com/shudhanshu0011/RentalBookingServices/blob/main/src/main/resources/static/images/motorcycle.png?raw=true"></img>
+                </div>
+                <div className="firsttext">
+                  Select your Bike
+                  <br />
+                </div>
+                <div className="secondtext">You can search & select bike.</div>
+              </div>
+              <div className="usecard2">
+                <div className="bikeimg">
+                  <img src="https://github.com/shudhanshu0011/RentalBookingServices/blob/main/src/main/resources/static/images/shopping-cart.png?raw=true"></img>
+                </div>
+                <div className="firsttext">
+                  Add to Cart
+                  <br />
+                </div>
+                <div className="secondtext">
+                  Easily add multiple bike in your cart.
+                </div>
+              </div>
             </div>
-            <div className="firsttext">
-              Select your Bike
-              <br />
+            <div className="cardss2">
+              <div className="usecard3">
+                <div className="bikeimg">
+                  <img src="https://github.com/shudhanshu0011/RentalBookingServices/blob/main/src/main/resources/static/images/location.png?raw=true"></img>
+                </div>
+                <div className="firsttext">
+                  Pick Your Bike
+                  <br />
+                </div>
+                <div className="secondtext">
+                  Find the pickup location and pick a bike.
+                </div>
+              </div>
+              <div className="usecard4">
+                <div className="bikeimg">
+                  <img src="https://github.com/shudhanshu0011/RentalBookingServices/blob/main/src/main/resources/static/images/distance.png?raw=true"></img>
+                </div>
+                <div className="firsttext">
+                  Ride Anywhere
+                  <br />
+                </div>
+                <div className="secondtext">We do not have kms limit.</div>
+              </div>
             </div>
-            <div className="secondtext">You can search & select bike.</div>
-          </div>
-          <div className="usecard2">
-            <div className="bikeimg">
-              <img src="https://github.com/shudhanshu0011/RentalBookingServices/blob/main/src/main/resources/static/images/shopping-cart.png?raw=true"></img>
-            </div>
-            <div className="firsttext">
-              Add to Cart
-              <br />
-            </div>
-            <div className="secondtext">
-              Easily add multiple bike in your cart.
-            </div>
-          </div>
-          <div className="usecard3">
-            <div className="bikeimg">
-              <img src="https://github.com/shudhanshu0011/RentalBookingServices/blob/main/src/main/resources/static/images/location.png?raw=true"></img>
-            </div>
-            <div className="firsttext">
-              Pick Your Bike
-              <br />
-            </div>
-            <div className="secondtext">
-              Find the pickup location and pick a bike.
-            </div>
-          </div>
-          <div className="usecard4">
-            <div className="bikeimg">
-              <img src="https://github.com/shudhanshu0011/RentalBookingServices/blob/main/src/main/resources/static/images/distance.png?raw=true"></img>
-            </div>
-            <div className="firsttext">
-              Ride Anywhere
-              <br />
-            </div>
-            <div className="secondtext">We do not have kms limit.</div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };

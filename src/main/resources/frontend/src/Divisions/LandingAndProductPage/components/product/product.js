@@ -9,38 +9,40 @@ function Product({ addProductToCart, ...props }) {
   return (
     <div className="container13">
       <div key={props.id} className="productcard">
-        <a href={`/product/${props.id}`}>
-          <img src={props.imageurl} />
-        </a>
-        <div className="cardbody">
+        <div className="carddtop">
           <div className="deetails0" href={`/product/${props.id}`}>
             {props.model}
           </div>
-          <div className="deetails01" href={`/product/${props.id}`}>
-            Rs. {props.price}
-          </div>
+          <Button
+            className="viewdetailsbtn"
+            type="button"
+            buttonStyle="btn--primary--outline"
+            buttonSize="btn--small"
+            onclick={() => {
+              setOpen(true);
+            }}
+          >
+            View Details
+          </Button>
+        </div>
+        <div className="bikeeimg" href={`/product/${props.id}`}>
+          <img src={props.imageurl} />
+        </div>
+        <div className="cardbody">
           <div className="deetails1">
             <div href={`/product/${props.id}`}>{props.city}</div>
             <div href={`/product/${props.id}`}>{props.date}</div>
+            <div className="deetails01" href={`/product/${props.id}`}>
+              Rs. {props.price}
+            </div>
           </div>
-          <div className="deetails2">
-            <Button
-              className="viewdetailsbtn"
-              type="button"
-              buttonStyle="btn--primary--solid"
-              buttonSize="btn--small"
-              onclick={() => {
-                setOpen(true);
-              }}
-            >
-              View Details
-            </Button>
 
+          <div className="deetails2">
             <Button
               className="addcartbtn"
               type="button"
-              buttonStyle="btn--danger--solid"
-              buttonSize="btn--small"
+              buttonStyle="btn--primary--cart"
+              buttonSize="btn--cart"
               onclick={() => addProductToCart({ ...props })}
             >
               Add to cart

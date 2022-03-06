@@ -26,44 +26,61 @@ body {
   display: flex;
 }
 .navbar1 {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  margin: 10px;
+  margin-right: 15px;
+  position: fixed;
+  border-radius: 15px;
+  background: whitesmoke;
+  /* border: 2px solid rgb(235, 235, 235); */
+  /* background-color: #dfd8ce; */
   display: flex;
+  width: 98.75%;
   min-height: 65px;
-  background-color: #1a1b21;
-  position: relative;
-  z-index: 1;
+  z-index: 1001;
 }
 
 .logo1 {
   flex: 10%;
   padding-left: 60px;
-  padding-top: 10px;
-  filter: invert(100%);
+  padding-top: 15px;
 }
 .logo1 img {
-  height: 45px;
+  height: 40px;
   position: absolute;
 }
 .navigation {
   display: flex;
-  flex: 60%;
+  flex: 71%;
   text-align: center;
+}
+.menu1 {
+  flex: 7%;
+  padding-top: 0.8%;
+}
+.listyourbike {
+  flex: 7%;
+  padding-top: 0.8%;
+}
+.cartt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 5%;
 }
 .navtext {
   font-family: HM;
   text-decoration: none;
   padding-left: 30px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
-  color: white;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 .navtext:hover {
   text-decoration: underline;
 }
-.menu1 {
-  flex: 11%;
-  padding-top: 10px;
-}
+
 .random1 {
   width: 20px;
 }
@@ -79,14 +96,10 @@ body {
   font-size: 15px;
   padding-left: 8px;
 }
-.listyourbike {
-  flex: 9%;
-  padding-top: 12px;
-}
+
 .dropdown {
   position: relative;
   display: inline-block;
-  border: 2px solid black;
 }
 .dropdown-content {
   display: none;
@@ -113,12 +126,7 @@ body {
 .dropdown:hover .dropbtn {
   cursor: pointer;
 }
-.cartt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 10%;
-}
+
 footer {
   padding-top: 100px;
   background-color: white;
@@ -362,12 +370,41 @@ footer {
 }
 
 .welcomewall {
-  display: block;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-image: url(https://github.com/shudhanshu0011/RentalBookingServices/blob/main/src/main/resources/static/images/picsart_02-20-02.36.38_20220220090818_cartoon_x4.jpg?raw=true);
+  margin-top: 85px;
+  display: flex;
+  position: relative;
+  height: 800px;
+  width: 100%;
+  color: #fff;
+  background: linear-gradient(90deg, #ffa9a9, #64a1e0, #ffa9a9, #64a1e0);
+  background-size: 400% 400%;
+  -webkit-animation: gradientBG 7s ease infinite forwards;
+  animation: gradientBG 7s ease infinite forwards;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url(https://github.com/shudhanshu0011/RentalBookingServices/blob/main/src/main/resources/static/images/picsart_02-20-02.36.38_20220220090818_cartoon_x4.jpg?raw=true); */
+}
+@-webkit-keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @media screen and (max-width: 520px) {
   .screen-body {
@@ -652,3 +689,44 @@ footer {
     height: 70vh;
   }
 }
+/* Login signup form */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* end */

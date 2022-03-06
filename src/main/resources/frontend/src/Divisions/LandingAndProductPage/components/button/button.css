@@ -21,6 +21,18 @@
   border: 2px solid var(--dark);
   color: var(--dark);
 }
+.btn--primary--cart {
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid var(--danger);
+  color: var(--danger);
+}
+.btn--primary--cart:hover {
+  background-color: var(--danger);
+  border-radius: 50px;
+  border: 2px solid var(--danger);
+  color: var(--white);
+}
 .btn--standard:hover {
   background-color: var(--dark);
   color: var(--white);
@@ -41,6 +53,7 @@
   background-color: var(--primary);
   color: var(--white);
   border: 2px solid var(--primary);
+  border-radius: 15px;
 }
 .btn--primary--solid:hover {
   background-color: #6d54d3;
@@ -81,6 +94,7 @@
   background-color: transparent;
   border: 2px solid var(--primary);
   color: var(--primary);
+  border-radius: 15px;
 }
 .btn--primary--outline:hover {
   background-color: var(--primary);
@@ -129,9 +143,13 @@
 }
 .btn--small {
   padding: 5px 15px;
-  font-size: 16px;
+  font-size: 1.5vh;
 }
 .btn--mobile {
   padding: 5px 10px;
   font-size: 13px;
+}
+.btn--cart {
+  height: 7vh;
+  width: 7vh;
 }

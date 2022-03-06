@@ -24,9 +24,16 @@ const STYLES = [
   "btn--danger--outline",
   "btn--success--outline",
   "btn--mobile--primary",
+  "btn--primary--cart",
 ];
 
-const SIZES = ["btn--medium", "btn--large", "btn--small", "btn--mobile"];
+const SIZES = [
+  "btn--medium",
+  "btn--large",
+  "btn--small",
+  "btn--mobile",
+  "btn--cart",
+];
 
 export const Button = ({
   children,

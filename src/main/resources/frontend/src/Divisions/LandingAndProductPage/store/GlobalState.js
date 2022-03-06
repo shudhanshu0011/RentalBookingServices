@@ -1,4 +1,5 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useEffect, useState } from "react";
+import axios from "axios";
 import data from "../data";
 
 import { ADD_TO_CART, REMOVE_FROM_CART, CLEAR_ALL_FROM_CART } from "./types";
@@ -7,6 +8,16 @@ import Reducer from "./Reducer";
 
 export default function GlobalState(props) {
   const products = data.products;
+
+  // const [products, setProducts] = useState([]);
+  // // Set proxy in package.json
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const { data } = await axios.get("/productlist");
+  //     setProducts(data);
+  //   };
+  //   fetchData();
+  // }, []);
 
   const [state, dispatch] = useReducer(Reducer, { carts: [] });
 
